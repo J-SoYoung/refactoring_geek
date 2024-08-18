@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
-import { newComment } from "../../api/firebase";
+import { newComment } from "../../api/setting_firebase";
 import { useRecoilValue } from "recoil";
 import { userState } from "../../atoms/userAtom";
 

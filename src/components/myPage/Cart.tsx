@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MyUsedItemList from "./MyUsedItemList";
 import { Link } from "react-router-dom";
-import { Product } from "../../api/firebase";
+import { Product } from "../../api/setting_firebase";
 import { makeArr } from "../../types/utils";
 
 interface CartsProps {

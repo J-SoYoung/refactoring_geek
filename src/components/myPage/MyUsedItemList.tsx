@@ -1,7 +1,7 @@
 import TrashIcon from "../../assets/icons/trash.svg";
 import Plus from "../../assets/icons/square_plus.svg";
 import Minus from "../../assets/icons/square_minus.svg";
-import { PayProduct } from "../../api/firebase";
+import { PayProduct } from "../../api/setting_firebase";
 
 export interface UsedItemListType {
   item: PayProduct;

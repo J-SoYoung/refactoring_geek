@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { usedItemDetailState } from "../../atoms/usedItemAtom";
 import { geekChickUser } from "../../atoms/userAtom";
-import { addUsedComment } from "../../api/firebase";
+import { addUsedComment } from "../../api/setting_firebase";
 import { useParams } from "react-router-dom";
 import { UsedItemType } from "../../types/usedType";
 

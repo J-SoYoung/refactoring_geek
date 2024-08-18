@@ -1,7 +1,7 @@
 import Layout from "../components/myPage/_Layout";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-import { loadUsedMessage, sendUsedMessage } from "../api/firebase";
+import { loadUsedMessage, sendUsedMessage } from "../api/setting_firebase";
 import { MessageListType } from "../types/usedType";
 import { makeArr } from "../types/utils";
 import { useRecoilValue } from "recoil";

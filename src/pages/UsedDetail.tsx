@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import { geekChickUser } from "../atoms/userAtom";
 import { usedItemDetailState } from "../atoms/usedItemAtom";
 import { calculateDaysAgo, makeArr } from "../types/utils";
-import { addUsedMessagePage, usedDetailItem } from "../api/firebase";
+import { addUsedMessagePage, usedDetailItem } from "../api/setting_firebase";
 
 import Chevron_left from "../assets/icons/chevron_left.svg";
 import UsedCommentList from "../components/usedDetail/UsedCommentList";

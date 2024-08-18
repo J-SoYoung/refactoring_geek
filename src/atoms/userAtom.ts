@@ -2,7 +2,7 @@ import { atom } from "recoil";
 import { User } from "firebase/auth";
 import { UserDataType } from "../types/usedType";
 
-interface AdminUser extends User {
+export interface AdminUser extends User {
   isAdmin: boolean;
 }
 

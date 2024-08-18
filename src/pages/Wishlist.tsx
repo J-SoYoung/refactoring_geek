@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useRecoilValue, useRecoilState } from "recoil";
 import { wishlistState, userState } from "../atoms/userAtom";
-import { getWishlistItems, setWishlistItems } from "../api/firebase";
+import { getWishlistItems, setWishlistItems } from "../api/setting_firebase";
 import closedIcon from "../assets/icons/close.svg";
 import { useNavigate } from "react-router-dom";
 

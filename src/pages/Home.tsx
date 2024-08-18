@@ -4,7 +4,10 @@ import Header from "../components/common/Header";
 import SearchHeader from "../components/common/SearchHeader";
 import { useQuery } from "@tanstack/react-query";
 import ProductCard from "../components/main/ProductCard";
-import useProducts, { loadUserData, uploadUserData } from "../api/firebase";
+import useProducts, {
+  loadUserData,
+  uploadUserData,
+} from "../api/setting_firebase";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { userState, geekChickUser } from "../atoms/userAtom";
 import { UserDataType } from "../types/usedType";

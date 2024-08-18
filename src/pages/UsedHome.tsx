@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { useQuery } from "@tanstack/react-query";
 
-import { loadUserData, usedItemLists, usedItemSearch } from "../api/firebase";
+import {
+  loadUserData,
+  usedItemLists,
+  usedItemSearch,
+} from "../api/setting_firebase";
 import { geekChickUser } from "../atoms/userAtom";
 import { UsedItemType } from "../types/usedType";
 

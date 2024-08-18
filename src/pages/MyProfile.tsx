@@ -5,10 +5,9 @@ import Icon_Pencile from "../assets/icons/pencil.svg";
 import ContentBox from "../components/myPage/ContentBox";
 import { useRecoilState } from "recoil";
 import { geekChickUser } from "../atoms/userAtom";
-import { editUserData } from "../api/firebase";
+import { editUserData } from "../api/setting_firebase";
 import { uploadCloudImage } from "../api/uploader";
 import { defaultImage } from "../types/utils";
-
 
 // ⭕ 데이터 형태 세세하게 지정하기 ex)phone 010-1111-1110 하이픈넣기, 주소명 등
 const MyProfile = () => {

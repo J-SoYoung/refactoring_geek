@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { uploadImage } from "../api/uploader";
-import { addNewProduct } from "../api/firebase";
+import { addNewProduct } from "../api/setting_firebase";
 
 // interface addnewProduct {
 //   id: string;

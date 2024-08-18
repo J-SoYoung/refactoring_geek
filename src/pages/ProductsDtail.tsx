@@ -9,7 +9,7 @@ import {
   getWishlistItems,
   setWishlistItems,
   addOrUpdateToCart,
-} from "../api/firebase";
+} from "../api/setting_firebase";
 import Comment from "../components/main/Comment";
 import CommentCard from "../components/main/CommentCard";
 

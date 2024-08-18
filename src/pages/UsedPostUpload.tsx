@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
-import { usedItemUpload } from "../api/firebase";
+import { usedItemUpload } from "../api/setting_firebase";
 import { useNavigate } from "react-router-dom";
 import { uploadCloudImage } from "../api/uploader";
 import { useRecoilState } from "recoil";
 import { geekChickUser } from "../atoms/userAtom";
-import {  UsedItemType} from "../types/usedType";
+import { UsedItemType } from "../types/usedType";
 
 // ⭕ 유효성 검사 check
 const UsedPostUpload = () => {

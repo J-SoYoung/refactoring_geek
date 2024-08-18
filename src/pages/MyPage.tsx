@@ -6,7 +6,7 @@ import { geekChickUser } from "../atoms/userAtom";
 import { useRecoilState } from "recoil";
 import { defaultImage, makeArr } from "../types/utils";
 import { useEffect } from "react";
-import { loadUserData } from "../api/firebase";
+import { loadUserData } from "../api/setting_firebase";
 
 const MyPage = () => {
   // recoil로 유저 데이터 상시 업데이트 => 전역에서 사용할 수 있게

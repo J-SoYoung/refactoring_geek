@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getCommentItems } from "../../api/firebase";
+import { getCommentItems } from "../../api/setting_firebase";
 import { useParams } from "react-router-dom";
 
 interface Comment {

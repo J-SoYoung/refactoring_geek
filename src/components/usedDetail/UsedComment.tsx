@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import { geekChickUser } from "../../atoms/userAtom";
 import { usedItemDetailState } from "../../atoms/usedItemAtom";
-import { editUsedComment, removeUsedComment } from "../../api/firebase";
+import { editUsedComment, removeUsedComment } from "../../api/setting_firebase";
 import { UsedItemType } from "../../types/usedType";
 
 interface CommentObjProps {
@@ -24,9 +24,9 @@ const UsedComment = ({ commentObj }: CommentObjProps) => {
   const [item, setItem] = useRecoilState<UsedItemType>(usedItemDetailState);
   const [isCommentEdit, setIsCommentEdit] = useState(false);
   const [editComment, setEditComment] = useState(commentObj.comment);
-  
-//  ⭕comment 업데이트 노트쓰기 
-  const updatedComments2 = Object.entries(item.comments)
+
+  //  ⭕comment 업데이트 노트쓰기
+  const updatedComments2 = Object.entries(item.comments);
   // console.log(updatedComments2)
   // const updatedComments3 = Object.entries(item.comments).map(
   //   ([key, comment]) => {
@@ -58,7 +58,7 @@ const UsedComment = ({ commentObj }: CommentObjProps) => {
       comment: editComment,
     };
     await editUsedComment(itemId, commentObj.commentId, editCommentData);
-    
+
     setIsCommentEdit(false);
     const updatedCommentsArray = Object.entries(item.comments).map(
       ([key, comment]) =>
@@ -67,7 +67,7 @@ const UsedComment = ({ commentObj }: CommentObjProps) => {
           : [key, comment]
     );
     const updatedComments = Object.fromEntries(updatedCommentsArray);
-    setItem({...item, comments: updatedComments})
+    setItem({ ...item, comments: updatedComments });
   };
 
   return (

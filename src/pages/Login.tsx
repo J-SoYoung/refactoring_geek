@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { login, logout, onUserStateChange } from "../api/firebase";
+import { login, logout, onUserStateChange } from "../api/setting_firebase";
 import { User } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { useSetRecoilState } from "recoil";

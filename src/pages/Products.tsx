@@ -4,7 +4,7 @@ import Header from "../components/common/Header";
 import SearchHeader from "../components/common/SearchHeader";
 import { useQuery } from "@tanstack/react-query";
 import ProductCard from "../components/main/ProductCard";
-import { getProducts } from "../api/firebase";
+import { getProducts } from "../api/setting_firebase";
 // import useProducts from "../api/firebase";
 // import { useRecoilValue } from "recoil";
 // import { Link } from "react-router-dom";

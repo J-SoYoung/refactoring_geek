@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import { addOrderList } from "../api/firebase";
+import { addOrderList } from "../api/setting_firebase";
 
 interface Product {
   id: string;

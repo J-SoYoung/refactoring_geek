@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
-import { getCart } from "../../api/firebase";
+import { getCart } from "../../api/setting_firebase";
 import { useRecoilValue } from "recoil";
 import { userState } from "../../atoms/userAtom";
 import CartItem from "./CartItem";
